@@ -1,0 +1,40 @@
+.header {
+  text-align: center;
+}
+
+.header-menu ul {
+  display: flex;
+  justify-content: center;
+}
+
+.header-menu ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+.main .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main .container h2 {
+  text-transform: uppercase;
+}
+
+.main .container-box {
+  width: calc(100% / 3 - 10px);
+  display: inline-block;
+}
+
+.main .container-box img {
+  max-width: 100%;
+}
+
+.footer {
+  display: flex;
+}
+
+.footer-column {
+  width: calc(100% / 3);
+}
+

@@ -151,11 +151,84 @@
     <title>Document</title>
   </head>
   <body>
-    @foreach ($data as $product)
-
-      <img src="{{$product["src"]}}" alt="">
-      <p>{{$product["tipo"]}}</p>
-    @endforeach
-
+    <!-- intestazione -->
+    <header class="header">
+      <div class="header-logo">
+        <img src="{{asset('images/logo.png')}}" alt="Logo Molisana">
+      </div>
+      <nav class="header-menu">
+        <ul>
+          <li>Home</li>
+          <li>Prodotti</li>
+          <li>News</li>
+        </ul>
+      </nav>
+    </header>
+    <!--/intestazione -->
+    <!-- corpo -->
+    <main class="main">
+      <div class="container">
+        <h2>Le lunghe</h2>
+        @foreach ($lunga as $product)
+          <div class="container-box">
+            <img src="{{$product["src"]}}" alt="">
+          </div>
+        @endforeach
+        <h2>Le corte</h2>
+        @foreach ($corta as $product)
+        <div class="container-box">
+          <img src="{{$product["src"]}}" alt="">
+        </div>        @endforeach
+        <h2>Le cortissime</h2>
+        @foreach ($cortissima as $product)
+        <div class="container-box">
+          <img src="{{$product["src"]}}" alt="">
+        </div>        @endforeach
+      </div>
+    </main>
+    <!-- corpo -->
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-column">
+        <div class="footer-column-logo">
+          <img src="{{asset('images/logo.png')}}" alt="Logo Molisana">
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Pastificio</h3>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <h3>Pastificio</h3>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Collezione da chef</h3>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- footer -->
   </body>
 </html>

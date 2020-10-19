@@ -1,1 +1,48 @@
-//
+@import "Partials/_variables.scss";
+
+.header {
+  text-align: center;
+
+  &-logo {
+
+  }
+  &-menu ul {
+    display: flex;
+    justify-content: center;
+
+    & li {
+      list-style: none;
+      margin: 0 20px;
+    }
+  }
+}
+
+.main {
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+
+    & h2 {
+      text-transform: uppercase;
+    }
+
+    &-box {
+    width: calc(100% / 3 - 10px);
+    display: inline-block;
+
+    & img {
+      max-width: 100%;
+    }
+  }
+  }
+}
+
+.footer {
+  display: flex;
+  &-column {
+    width: calc(100% / 3);
+
+    
+  }
+}
