@@ -1,4 +1,5 @@
 @php
+
  $data = '[
   {
     "src": "https://www.lamolisana.it/wp-content/uploads/2017/06/4-spaghetto-quadrato-bucato-m.jpg",
@@ -124,6 +125,19 @@
 
   $data = json_decode($data, TRUE);
   // dd($data);
+  $lunga = [];
+  $corta = [];
+  $cortissima = [];
+
+  foreach($data as $product) {
+    if($product["tipo"] == "lunga") {
+      $lunga[] = $product;
+    } elseif($product["tipo"] == "corta") {
+      $corta[] = $product;
+    } elseif($product["tipo"] == "cortissima") {
+      $cortissima[] = $product;
+    }
+  }
   @endphp
 
 
@@ -138,7 +152,9 @@
   </head>
   <body>
     @foreach ($data as $product)
+
       <img src="{{$product["src"]}}" alt="">
+      <p>{{$product["tipo"]}}</p>
     @endforeach
 
   </body>
