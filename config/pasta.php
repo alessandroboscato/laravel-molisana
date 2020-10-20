@@ -1,4 +1,5 @@
 <?php
+
 $data = '[
  {
    "src": "https://www.lamolisana.it/wp-content/uploads/2017/06/4-spaghetto-quadrato-bucato-m.jpg",
@@ -123,3 +124,4 @@ $data = '[
  ]';
 
  $data = json_decode($data, TRUE);
+ return $data;

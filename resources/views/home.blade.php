@@ -1,6 +1,5 @@
 @php
 $data = config('pasta');
-  dd($data);
   $lunga = [];
   $corta = [];
   $cortissima = [];
