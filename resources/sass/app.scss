@@ -10,17 +10,14 @@
   background-image: url("../../images/bg.jpg");
   margin-top: 20px;
 
-  .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 50px 0;
-
-    & h2 {
+    h2 {
       text-transform: uppercase;
       color: $title_color;
+      margin: 20px 0;
+      font-size: 26px;
     }
 
-    &-box {
+    .container-box {
     display: flex;
     flex-wrap: wrap;
 
@@ -32,5 +29,4 @@
       }
     }
   }
-}
 }

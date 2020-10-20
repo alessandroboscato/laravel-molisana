@@ -12,6 +12,12 @@ ul {
   list-style: none;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
 .header-logo {
   text-align: center;
   padding: 30px 0;
@@ -35,24 +41,35 @@ ul {
 }
 
 .footer {
+  background-image: url("../../images/footer-montagne-bottom.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin-top: 20px;
   display: flex;
 }
-.footer-column {
-  width: calc(100% / 3);
+.footer .container {
+  display: flex;
+}
+.footer .container .footer-column {
+  flex-basis: calc(100% / 3);
+}
+.footer .container .footer-column h3 {
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.footer .container .footer-column:not(:first-of-type) ul {
+  line-height: 30px;
 }
 
 .main {
   background-image: url("../../images/bg.jpg");
   margin-top: 20px;
 }
-.main .container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 50px 0;
-}
-.main .container h2 {
+.main h2 {
   text-transform: uppercase;
   color: #002d75;
+  margin: 20px 0;
+  font-size: 26px;
 }
 .main .container-box {
   display: flex;

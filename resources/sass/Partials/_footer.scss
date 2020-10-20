@@ -1,8 +1,22 @@
 .footer {
+  background-image: url("../../images/footer-montagne-bottom.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin-top: 20px;
   display: flex;
-  &-column {
-    width: calc(100% / 3);
 
+  .container {
+    display: flex;
+    .footer-column {
+      flex-basis: calc(100% / 3);
+      h3 {
+        text-transform: uppercase;
+        margin: 20px 0;
+      }
+    }
+    .footer-column:not(:first-of-type) ul{
+      line-height: 30px;
 
+    }
   }
 }
