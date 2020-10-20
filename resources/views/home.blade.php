@@ -157,10 +157,10 @@
         <img src="{{asset('images/logo.png')}}" alt="Logo Molisana">
       </div>
       <nav class="header-menu">
-        <ul>
-          <li>Home</li>
-          <li>Prodotti</li>
-          <li>News</li>
+        <ul class="header-menu-nav">
+          <li><a href="#">Home</a></li>
+          <li><a class="active" href="prodotti">Prodotti</a></li>
+          <li><a href="news">News</a></li>
         </ul>
       </nav>
     </header>
@@ -169,21 +169,29 @@
     <main class="main">
       <div class="container">
         <h2>Le lunghe</h2>
-        @foreach ($lunga as $product)
-          <div class="container-box">
-            <img src="{{$product["src"]}}" alt="">
-          </div>
-        @endforeach
+        <ul class="container-box">
+          @foreach ($lunga as $product)
+            <li>
+              <img src="{{$product["src"]}}" alt="">
+            </li>
+          @endforeach
+        </ul>
         <h2>Le corte</h2>
-        @foreach ($corta as $product)
-        <div class="container-box">
-          <img src="{{$product["src"]}}" alt="">
-        </div>        @endforeach
+        <ul class="container-box">
+          @foreach ($corta as $product)
+            <li>
+              <img src="{{$product["src"]}}" alt="">
+            </li>
+          @endforeach
+        </ul>
         <h2>Le cortissime</h2>
-        @foreach ($cortissima as $product)
-        <div class="container-box">
-          <img src="{{$product["src"]}}" alt="">
-        </div>        @endforeach
+        <ul class="container-box">
+          @foreach ($cortissima as $product)
+            <li>
+              <img src="{{$product["src"]}}" alt="">
+            </li>
+          @endforeach
+        </ul>
       </div>
     </main>
     <!-- corpo -->

@@ -1,0 +1,26 @@
+.header {
+
+  &-logo {
+    text-align: center;
+    padding: 30px 0;
+    img {
+      height: 100px;
+    }
+  }
+  &-menu-nav {
+    display: flex;
+    justify-content: center;
+
+    & li a {
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #000;
+      font-size: 24px;
+      font-weight: bold;
+
+      &.active {
+        background-color: $blue_color;
+      }
+    }
+  }
+}
