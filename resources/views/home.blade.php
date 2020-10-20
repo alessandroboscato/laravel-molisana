@@ -1,5 +1,7 @@
+
 @php
 $data = config('pasta');
+
   $lunga = [];
   $corta = [];
   $cortissima = [];
