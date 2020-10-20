@@ -158,9 +158,9 @@
       </div>
       <nav class="header-menu">
         <ul class="header-menu-nav">
-          <li><a href="#">Home</a></li>
-          <li><a class="active" href="prodotti">Prodotti</a></li>
-          <li><a href="news">News</a></li>
+          <li><a href="{{route("home")}}">Home</a></li>
+          <li><a class="active" href="{{route("products")}}">Prodotti</a></li>
+          <li><a href="{{route("news")}}">News</a></li>
         </ul>
       </nav>
     </header>

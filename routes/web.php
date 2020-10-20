@@ -19,12 +19,12 @@ Route::get('/', function () {
 
 Route::get('/home', function () {
   return view('home');
-});
+})->name("home");
 
 Route::get('/prodotti', function () {
   return view('prodotti');
-});
+})->name("products");
 
 Route::get('/news', function () {
   return view('news');
-});
+})->name("news");
