@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;
-
-300;400;500;700&display=swap);* {
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap);* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -18,24 +16,20 @@ ul {
   text-align: center;
   padding: 30px 0;
 }
-
 .header-logo img {
   height: 100px;
 }
-
 .header-menu-nav {
   display: flex;
   justify-content: center;
 }
-
 .header-menu-nav li a {
-  padding: 10px 15px;
+  padding: 20px 15px;
   text-decoration: none;
   color: #000;
   font-size: 24px;
   font-weight: bold;
 }
-
 .header-menu-nav li a.active {
   background-color: #B3E5FC;
 }
@@ -43,31 +37,31 @@ ul {
 .footer {
   display: flex;
 }
-
 .footer-column {
   width: calc(100% / 3);
 }
 
+.main {
+  background-image: url("../../images/bg.jpg");
+  margin-top: 20px;
+}
 .main .container {
   width: 80%;
   margin: 0 auto;
+  padding: 50px 0;
 }
-
 .main .container h2 {
   text-transform: uppercase;
+  color: #002d75;
 }
-
 .main .container-box {
   display: flex;
   flex-wrap: wrap;
 }
-
 .main .container-box li {
   flex-basis: calc(100% / 3 - 6px);
   margin: 3px;
 }
-
 .main .container-box li img {
   width: 100%;
 }
-
