@@ -25,7 +25,7 @@ Route::get('/home', function () {
       $product["id"] = $key;
       $paste[$product["tipo"]][] = $product;
     }
-  return view('home', $paste);
+  return view('home', ['paste' => $paste]);
 })->name("home");
 
 Route::get('/prodotti', function () {

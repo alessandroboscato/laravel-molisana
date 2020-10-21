@@ -8,42 +8,23 @@
     <!-- corpo -->
     <main class="main">
       <div class="container">
-        <h2>Le lunghe</h2>
-        <ul class="container-box">
-          @foreach ($lunga as $product)
-            <li>
-              <div class="overlay">
-                <h3><a href="prodotti/show/{{$product["id"]}}">{{$product["titolo"]}}</a></h3>
-                <a><img src="{{asset('images/icon.svg')}}" alt="Icon"></a>
-              </div>
-              <img src="{{$product["src"]}}" alt="">
-            </li>
+        @if (!empty($paste))
+
+          @foreach ($paste as $key => $tipopasta)
+              <h2>{{$key}}</h2>
+              <ul class="container-box">
+                @foreach ($tipopasta as $prodotto)
+                  <li>
+                    <div class="overlay">
+                      <h3><a href="prodotti/show/{{$prodotto["id"]}}">{{$prodotto["titolo"]}}</a></h3>
+                      <a><img src="{{asset('images/icon.svg')}}" alt="Icon"></a>
+                    </div>
+                    <img src="{{$prodotto["src"]}}" alt="">
+                  </li>
+                @endforeach
+              </ul>
           @endforeach
-        </ul>
-        <h2>Le corte</h2>
-        <ul class="container-box">
-          @foreach ($corta as $product)
-            <li>
-              <div class="overlay">
-                <h3><a href="prodotti/show/{{$product["id"]}}">{{$product["titolo"]}}</a></h3>
-                <a><img src="{{asset('images/icon.svg')}}" alt="Icon"></a>
-              </div>
-              <img src="{{$product["src"]}}" alt="">
-            </li>
-          @endforeach
-        </ul>
-        <h2>Le cortissime</h2>
-        <ul class="container-box">
-          @foreach ($cortissima as $product)
-            <li>
-              <div class="overlay">
-                <h3><a href="prodotti/show/{{$product["id"]}}">{{$product["titolo"]}}</a></h3>
-                <a><img src="{{asset('images/icon.svg')}}" alt="Icon"></a>
-              </div>
-              <img src="{{$product["src"]}}" alt="">
-            </li>
-          @endforeach
-        </ul>
+        @endif
       </div>
     </main>
     <!-- corpo -->

@@ -9,9 +9,9 @@
   </head>
   <body>
     @include("partials.header")
-    <main>
+{{-- main --}}
       @yield("mainContent")
-    </main>
+{{-- main --}}
     @include("partials.footer")
   </body>
 </html>
