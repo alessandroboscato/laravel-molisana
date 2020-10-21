@@ -44,6 +44,7 @@ Route::get('/news', function () {
   return view('news');
 })->name("news");
 
-// Route::get('/prodotto/show/{id}', function ($id) {
-//   return view('news');
-// })->name("news");
+Route::get('/prodotti/show/{id}', function ($id) {
+  $prodotto = config("pasta.$id");
+  return view('prodotto_singolo', ['data' => $prodotto]);
+});
