@@ -9,7 +9,6 @@
     <main class="main">
       <div class="container">
         @if (!empty($paste))
-
           @foreach ($paste as $key => $tipopasta)
               <h2>{{$key}}</h2>
               <ul class="container-box">

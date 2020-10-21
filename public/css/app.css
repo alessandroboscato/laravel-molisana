@@ -18,6 +18,15 @@ ul {
   padding: 50px 0;
 }
 
+main {
+  background-color: #B7DAE5;
+  margin-top: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .header-logo {
   text-align: center;
   padding: 30px 0;
@@ -40,30 +49,8 @@ ul {
   background-color: #B3E5FC;
 }
 
-.footer {
-  background-image: url("../../images/footer-montagne-bottom.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  margin-top: 20px;
-  display: flex;
-}
-.footer .container {
-  display: flex;
-}
-.footer .container .footer-column {
-  flex-basis: calc(100% / 3);
-}
-.footer .container .footer-column h3 {
-  text-transform: uppercase;
-  margin: 20px 0;
-}
-.footer .container .footer-column:not(:first-of-type) ul {
-  line-height: 30px;
-}
-
 .main {
   background-image: url("../../images/bg.jpg");
-  margin-top: 20px;
 }
 .main h2 {
   text-transform: uppercase;
@@ -102,4 +89,36 @@ ul {
 }
 .main .container-box li:hover .overlay {
   display: block;
+}
+
+.footer {
+  background-image: url("../../images/footer-montagne-bottom.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin-top: 20px;
+  display: flex;
+}
+.footer .container {
+  display: flex;
+}
+.footer .container .footer-column {
+  flex-basis: calc(100% / 3);
+}
+.footer .container .footer-column h3 {
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.footer .container .footer-column:not(:first-of-type) ul {
+  line-height: 30px;
+}
+
+.container h1 {
+  color: #002d75;
+}
+.container img {
+  width: 100%;
+}
+.container p.product {
+  color: #002d75;
+  line-height: 30px;
 }
