@@ -18,13 +18,32 @@ Route::get('/', function () {
 });
 
 Route::get('/home', function () {
-  return view('home');
+  $data = config('pasta');
+  $paste = [];
+
+    foreach($data as $key => $product) {
+      $product["id"] = $key;
+      $paste[$product["tipo"]][] = $product;
+    }
+  return view('home', $paste);
 })->name("home");
 
 Route::get('/prodotti', function () {
-  return view('prodotti');
+  $data = config('pasta');
+  $paste = [];
+
+    foreach($data as $key => $product) {
+      $product["id"] = $key;
+      $paste[$product["tipo"]][] = $product;
+    }
+
+  return view('prodotti', $paste);
 })->name("products");
 
 Route::get('/news', function () {
   return view('news');
 })->name("news");
+
+// Route::get('/prodotto/show/{id}', function ($id) {
+//   return view('news');
+// })->name("news");

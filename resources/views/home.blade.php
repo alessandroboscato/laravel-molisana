@@ -1,22 +1,4 @@
 @extends('layouts.main')
-@php
-$data = config('pasta');
-  $lunga = [];
-  $corta = [];
-  $cortissima = [];
-
-  foreach($data as $key => $product) {
-    $product["id"] = $key;
-    if($product["tipo"] == "lunga") {
-      $lunga[] = $product;
-    } elseif($product["tipo"] == "corta") {
-      $corta[] = $product;
-    } elseif($product["tipo"] == "cortissima") {
-      $cortissima[] = $product;
-    }
-  }
-  // dd($data);
-  @endphp
 
   @section('title')
     La Molisana - Sito Ufficiale
