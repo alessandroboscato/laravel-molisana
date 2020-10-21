@@ -36,7 +36,7 @@ ul {
   font-size: 24px;
   font-weight: bold;
 }
-.header-menu-nav li a.active {
+.header-menu-nav li a:hover {
   background-color: #B3E5FC;
 }
 
@@ -78,7 +78,28 @@ ul {
 .main .container-box li {
   flex-basis: calc(100% / 3 - 6px);
   margin: 3px;
+  position: relative;
+}
+.main .container-box li .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #4A6680;
+  opacity: 0.7;
+  position: absolute;
+  display: none;
+  font-size: 26px;
+  color: #fff;
+}
+.main .container-box li .overlay a {
+  display: inline-block;
+  width: 30px;
+}
+.main .container-box li .overlay a img {
+  width: 100%;
 }
 .main .container-box li img {
   width: 100%;
+}
+.main .container-box li:hover .overlay {
+  display: block;
 }

@@ -18,7 +18,7 @@
       font-size: 24px;
       font-weight: bold;
 
-      &.active {
+      &:hover {
         background-color: $blue_color;
       }
     }
