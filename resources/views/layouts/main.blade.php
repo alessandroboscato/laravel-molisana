@@ -8,10 +8,12 @@
     <title>@yield("title")</title>
   </head>
   <body>
+    {{-- header non cambia perciò va incluso --}}
     @include("partials.header")
 {{-- main --}}
       @yield("mainContent")
 {{-- main --}}
+{{-- footer non cambia perciò va incluso --}}
     @include("partials.footer")
   </body>
 </html>

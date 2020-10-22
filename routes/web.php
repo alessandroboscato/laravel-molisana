@@ -29,15 +29,7 @@ Route::get('/home', function () {
 })->name("home");
 
 Route::get('/prodotti', function () {
-  $data = config('pasta');
-  $paste = [];
-
-    foreach($data as $key => $product) {
-      $product["id"] = $key;
-      $paste[$product["tipo"]][] = $product;
-    }
-
-  return view('prodotti', $paste);
+    return redirect('/home');
 })->name("products");
 
 Route::get('/news', function () {

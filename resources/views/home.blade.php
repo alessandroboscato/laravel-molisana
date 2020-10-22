@@ -15,8 +15,10 @@
                 @foreach ($tipopasta as $prodotto)
                   <li>
                     <div class="overlay">
-                      <h3><a href="prodotti/show/{{$prodotto["id"]}}">{{$prodotto["titolo"]}}</a></h3>
-                      <a><img src="{{asset('images/icon.svg')}}" alt="Icon"></a>
+                      <div class="overlay-text">
+                        <h3><a href="prodotti/show/{{$prodotto["id"]}}">{{$prodotto["titolo"]}}</a></h3>
+                        <a><img src="{{asset('images/icon.svg')}}" alt="Icon"></a>
+                      </div>
                     </div>
                     <img src="{{$prodotto["src"]}}" alt="">
                   </li>
