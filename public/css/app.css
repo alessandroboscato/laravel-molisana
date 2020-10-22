@@ -128,3 +128,22 @@ main {
   color: #002d75;
   line-height: 30px;
 }
+
+.slider {
+  position: relative;
+}
+.slider a {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  display: inline-block;
+  background-color: #DBEBF2;
+  border-radius: 5px;
+  font-size: 50px;
+}
+.slider a.left {
+  left: 0;
+}
+.slider a.right {
+  right: 0;
+}

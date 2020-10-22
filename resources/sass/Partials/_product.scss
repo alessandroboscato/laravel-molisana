@@ -12,3 +12,25 @@
     line-height: 30px;
   }
 }
+
+.slider {
+  position: relative;
+
+  a {
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    display: inline-block;
+    background-color: #DBEBF2;
+    border-radius: 5px;
+    font-size: 50px;
+
+
+    &.left {
+      left: 0;
+    }
+    &.right {
+      right: 0;
+    }
+  }
+}

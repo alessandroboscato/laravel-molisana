@@ -12,10 +12,10 @@
       <div class="slider">
         <img src="{{$data["src-p"]}}" alt="Pasta picture">
         @if ($id > 0)
-          <a href="{{route("dettaglio-prodotto", $id - 1)}}"><i class="fas fa-angle-left"></i></a>
+          <a class="left" href="{{route("dettaglio-prodotto", $id - 1)}}"><i class="fas fa-angle-left"></i></a>
         @endif
         @if ($id < 11)
-          <a href="{{route("dettaglio-prodotto", $id + 1)}}"><i class="fas fa-angle-right"></i></a>
+          <a class="right"href="{{route("dettaglio-prodotto", $id + 1)}}"><i class="fas fa-angle-right"></i></a>
         @endif
       </div>
       <p class="product">{!!$data["descrizione"]!!}</p>
