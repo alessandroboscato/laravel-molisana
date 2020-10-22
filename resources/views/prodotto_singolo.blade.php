@@ -7,7 +7,7 @@
 @section('mainContent')
   <main>
     <div class="container">
-      <h1 class="text-center">{{$data["titolo"]}}</h1>
+      <h1>{{$data["titolo"]}}</h1>
       <img src="{{$data["src-h"]}}" alt="">
       <img src="{{$data["src-p"]}}" alt="">
       <p class="product">{!!$data["descrizione"]!!}</p>

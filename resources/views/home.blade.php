@@ -16,8 +16,8 @@
                   <li>
                     <div class="overlay">
                       <div class="overlay-text">
-                        <h3><a href="prodotti/show/{{$prodotto["id"]}}">{{$prodotto["titolo"]}}</a></h3>
-                        <a><img src="{{asset('images/icon.svg')}}" alt="Icon"></a>
+                        <a href="prodotti/show/{{$prodotto["id"]}}">{{$prodotto["titolo"]}}</a>
+                        <a href="prodotti/show/{{$prodotto["id"]}}"><img src="{{asset('images/icon.svg')}}" alt="Icon"></a>
                       </div>
                     </div>
                     <img src="{{$prodotto["src"]}}" alt="">
